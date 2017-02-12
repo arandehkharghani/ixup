@@ -1,9 +1,10 @@
 # IXUP - Technical Assessment
 3 problems solved in above solution.
 ## Intro
-langualge: Typescript
-technology: nodejs
-framework: Angular2
+- langualge: Typescript
+- technology: nodejs
+- framework: Angular2
+
 please refer to the 'service' files under app\ixup\ folders to see the core implementation.
 ## How to run
 - clone the app to your local folder.
