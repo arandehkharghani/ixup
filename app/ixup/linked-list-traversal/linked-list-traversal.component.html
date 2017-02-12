@@ -1,0 +1,18 @@
+<form [formGroup]="linkedListForm" (ngSubmit)='onAdd(linkedListForm.value)'>
+    <div class="form-group">
+        <label for="linkedListNumber">Value</label>
+        <input type="text" class="form-control" id="linkedListNumber" formControlName='val' />
+        <div *ngIf="linkedListForm.hasError('required', 'val')" class="error">Value is required</div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!linkedListForm.valid">Add</button>
+</form>
+
+<div class="form-group">
+    <label for="sideB">{{_array}}</label>
+</div>
+<button type="button" class="btn btn-default" (click)='onClearClicked()'>Clear</button>
+
+<div class="form-group">
+    <label>The bottom 5th Value:</label>
+    <label>{{the5thValue}}</label>
+</div>
